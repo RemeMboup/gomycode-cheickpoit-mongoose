@@ -34,16 +34,16 @@ person
     .catch(err => {
         console.error(err)
     })
-// const arrayOfPeople = [
-//     {name:"Babacar Toure", age:17, favoriteFoods:['Pizza']},
-//     {name:"Fatou Sene",age:20, favoriteFoods:['Chawarman']},
-//     {name:"Mai Mboup",age:35, favoriteFoods:['Poulet','Benie']}
-// ]
-// Person
-//     .create(arrayOfPeople)
-//     .then(console.log('Persons saving succefuly'))
-//     .catch((err) => {console.error(err);
-//     })
+const arrayOfPeople = [
+    {name:"Babacar Toure", age:17, favoriteFoods:['Pizza']},
+    {name:"Fatou Sene",age:20, favoriteFoods:['Chawarman']},
+    {name:"Mai Mboup",age:35, favoriteFoods:['Poulet','Benie']}
+]
+Person
+    .create(arrayOfPeople)
+    .then(console.log('Persons saving succefuly'))
+    .catch((err) => {console.error(err);
+    })
 
 //recherche toutes les personnes
 Person
@@ -75,17 +75,17 @@ Person
         console.error(err)
     })
 //recherche par id puis ajout de plat
-// var id = '6487b9c94be9633e71029420';
-// Person
-//     .findById(id)
-//     .then(doc => {
-//         doc.favoriteFoods.push('Hamburger')
-//         doc.save()
-//         console.log(doc)
-//     })
-//     .catch(err => {
-//         console.error(err)
-//     })
+var id = '6487b9c94be9633e71029420';
+Person
+    .findById(id)
+    .then(doc => {
+        doc.favoriteFoods.push('Hamburger')
+        doc.save()
+        console.log(doc)
+    })
+    .catch(err => {
+        console.error(err)
+    })
 
 //recherche par nom et mettre à jour l'âge
 Person
